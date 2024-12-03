@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="beranda.css">
+    <title>Beranda</title>
+</head>
+
+<body>
+    <!-- tampilan navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="beranda.html" style="font-weight: 800; margin-left: 20px;">Lion Air</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Lion Air</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="beranda.html">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="pemesanan.html">Pemesanan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="promosi.html">Promosi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="penerbangan.html">Penerbangan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="hubungi.html">Hubungi Kami</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Tampilan Navbar End -->
+
+    <!-- content -->
+     <!-- pemesanan -->
+    <div class="bg-lionair">
+        <h1 class="welcome-title">Selamat Datang di Lion Air</h1>
+        <h6 class="welcome-description">We Make People Fly</h6>
+        <h4 class="welcome-text">Mulai Traveling Sekarang</h4>
+        <h6 class="welcome-description">Booking tiket pesawatmu menggunakan Lion Air</h6>
+
+        <div class="booking-section">
+            <div class="trip-type">
+                <input type="radio" class="form-check-input" id="sekali-jalan" name="tripType" value="sekali" checked>
+                <label class="form-check-label" for="sekali-jalan">Sekali Jalan</label>
+
+                <input type="radio" class="form-check-input" id="pulang-pergi" name="tripType" value="pulang">
+                <label class="form-check-label" for="pulang-pergi">Pulang Pergi</label>
+            </div>
+
+            <div class="form-row">
+                <select class="form-select form-select-sm" aria-label="Dari">
+                    <option selected disabled>Dari</option>
+                    <option>Jakarta</option>
+                    <option>Surabaya</option>
+                    <option>Batam</option>
+                    <option>Bali</option>
+                    <option>Yogyakarta</option>
+                </select>
+
+                <select class="form-select form-select-sm" aria-label="Ke">
+                    <option selected disabled>Ke</option>
+                    <option>Jakarta</option>
+                    <option>Surabaya</option>
+                    <option>Batam</option>
+                    <option>Bali</option>
+                    <option>Yogyakarta</option>
+                </select>
+
+                <input type="date" class="form-control form-control-sm" placeholder="Tanggal Keberangkatan"
+                    id="departure-date">
+                <input type="date" class="form-control form-control-sm" placeholder="Tanggal Kembali" id="return-date"
+                    style="display: none;">
+
+                <select class="form-select form-select-sm" aria-label="Jumlah Orang">
+                    <option selected>1 Orang</option>
+                    <option>2 Orang</option>
+                    <option>3 Orang</option>
+                    <option>4 Orang</option>
+                    <option>5 Orang</option>
+                </select>
+
+                <button type="button" class="btn btn-danger">CARI</button>
+            </div>
+        </div>
+    </div>
+    <!-- pemesanan end -->
+
+    <!-- kelola pemesanan -->
+    <!-- Heading -->
+    <h2 style=" margin-top: 6rem; margin-left: 1rem; margin-bottom: -30px;">Kelola Pemesanan</h2>
+    <!-- Isi Container -->
+    <div class="container-fluid custom-container my-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Web Check-in</p>
+                    <p class="box-description">Mulai 15 November 2023, Web Check-In hanya dapat dilakukan melalui
+                        aplikasi BookCabin. Silakan unduh aplikasi BookCabin di App Store atau Play Store.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Rincian Pemesanan</p>
+                    <p class="box-description">Periksa status dan rincian pemesanan Anda serta cetak ulang tiket
+                        elektronik Anda.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Bagasi Prabayar</p>
+                    <p class="box-description">Dapatkan harga lebih terjangkau dengan memesan bagasi prabayar setidaknya
+                        6 jam sebelum keberangkatan.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Asuransi Perjalanan</p>
+                    <p class="box-description">Dapatkan perlindungan luas dengan paket asuransi perjalanan persembahan
+                        dari PT Asuransi Sinar Mas Net.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Ubah Penerbangan</p>
+                    <p class="box-description">Perubahan rencana? Anda dapat mengubah jadwal penerbangan Anda.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Rapid Test</p>
+                    <p class="box-description">Dapatkan metode uji kesehatan skrining awal dan cepat (Rapid Test Corona
+                        Virus Disease 2019 (COVID-19)) khusus kepada penumpang Lion Air Group.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Pengajuan Pengembalian</p>
+                    <p class="box-description">Dapatkan pengembalian biaya tiket sesuai dengan ketentuan yang berlaku.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Pemesanan Kursi</p>
+                    <p class="box-description">Dapatkan kenyamanan ekstra saat perjalanan dengan memesan kursi Anda dari
+                        sekarang.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Makanan Prabayar</p>
+                    <p class="box-description">Tidak lagi merasa kelaparan saat di pesawat karena Anda dapat memesan
+                        layanan makanan prabayar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- kelola pemesanan end -->
+
+    <!-- berita -->
+    <h2 style=" margin-top: 5rem; margin-left: 1rem; margin-bottom: -30px;">Berita Terkini</h2>
+    <!-- Isi berita -->
+    <div class="container-fluid custom-container my-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-description" style="font-weight: 500;">Siapapun Bisa Terbang Mudah ke Korea Selatan:
+                        Lion Group x Jeju Air Kenalkan Rute Baru Bali-Incheon</p>
+                    <p class="box-text">Okt 23, 2024, 19.33 PM by Lion Air Public Relations</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-description" style="font-weight: 500;">Lion Group dan LeMondial Bussiness School Jalin
+                        Kerjasama Strategis untuk Pengembangan SDM Profesional</p>
+                    <p class="box-text">Okt 21, 2024, 11.53 AM by Lion Air Public Relations</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-description" style="font-weight: 500;">Lion Air Raih Penghargaan Customer/Buyer
+                        Terbaik 1 Kelas Usaha Swasta Besar pada Ajang Mitra BUMN Champion 2024</p>
+                    <p class="box-text">Okt 15, 2024, 11.37 AM by Lion Air Public Relations</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-description" style="font-weight: 500;">Jaringan Pengembangan Lion Group Untuk
+                        Kemudahan Perjalanan bagi Masyarakat dan Mendukung Pengembangan Ekonomi</p>
+                    <p class="box-text">Okt 1, 2024, 18.42 PM by Lion Air Public Relations</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-description" style="font-weight: 500;">Lion Group dan Jeju Air Perkenalkan Rute Baru
+                        Batam - Incheon: #JadiExploreKorea</p>
+                    <p class="box-text">Okt 10, 2024, 16.59 PM by Lion Air Public Relations</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-description" style="font-weight: 500;">Mendukung Penerbangan Berkelanjutan dan Ramah
+                        Lingkungan: Ketentuan Pembayaran Non-Tunai di Lion Group</p>
+                    <p class="box-text">Sep 27, 2024, 11.18 PM by Lion Air Public Relations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- berita end -->
+
+    <!-- footer -->
+    <section id="copy-right">
+        <div class="copy-right-sec"><i class="fa-solid fa-copyright"></i>
+            <p>&copy; Copyright by Lion Air. All Rights Reserved. This website is owned and operated by Nabila
+                Andriani<a href="#"> Lion Air</a></p>
+        </div>
+    </section>
+    <!-- footer end -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="beranda.js"></script>
+</body>
+
+</html>

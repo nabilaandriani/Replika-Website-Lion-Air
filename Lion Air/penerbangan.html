@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="penerbangan.css">
+    <title>Penerbangan</title>
+</head>
+
+<body>
+    <!-- tampilan navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="beranda.html" style="font-weight: 800; margin-left: 20px;">Lion
+                    Air</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Lion Air</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="beranda.html">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" aria-current="page" href="pemesanan.html">Pemesanan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="promosi.html">Promosi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="penerbangan.html">Penerbangan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="hubungi.html">Hubungi Kami</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Tampilan Navbar End -->
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs mt-5">
+        <li class="nav-item">
+            <a class="nav-link" onclick="window.location.href='promosi.html'">Promosi Perjalanan</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" onclick="window.location.href='penerbangan.html'">Tujuan</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#">Rute Penerbangan</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#">eNewsletter</a>
+        </li>
+    </ul>
+    <!-- nav tabs end -->
+
+    <!-- isi content -->
+    <!-- promosi -->
+    <h2 style="margin-left: 70px; margin-top: auto; padding-top: 20px; ">Promosi</h2>
+    <p style="margin-left: 70px; margin-top: -5px;">View out top destination offers</p>
+    <div class="container">
+        <div class="card mb-3" style="max-width: 940px;" id="card">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="gambar.png" class="img-fluid rounded-start" style="margin-left: 50px; margin-top: 20px; "
+                        alt="gambar">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Ho Chi Minh City</h5>
+                        <p class="card-text">Take a trip down the Mekong River or navigate the city's bustling
+                            streets on foot, to gain a peek into the soul of its thriving community.
+                            <br>Explore the historic sites and architecture of this former French colony, and marvel
+                            at the intricacies of local Vietnamese handicraft. See how Ho Chi Minh City has risen
+                            from the ashes of war, and enjoy the warm smiles that greet you the moment you set foot
+                            in the city.
+                        </p>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- promosi end -->
+
+    <!-- modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Pemesanan</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="booking-section">
+                        <div class="trip-type">
+                            <input type="radio" class="form-check-input" id="sekali-jalan" name="tripType"
+                                value="sekali" checked>
+                            <label class="form-check-label" for="sekali-jalan">Sekali Jalan</label>
+
+                            <input type="radio" class="form-check-input" id="pulang-pergi" name="tripType"
+                                value="pulang">
+                            <label class="form-check-label" for="pulang-pergi">Pulang Pergi</label>
+                        </div>
+
+                        <div class="form-row">
+                            <select class="form-select form-select-sm" aria-label="Dari">
+                                <option selected disabled>Dari</option>
+                                <option>Jakarta</option>
+                                <option>Surabaya</option>
+                                <option>Batam</option>
+                                <option>Bali</option>
+                                <option>Yogyakarta</option>
+                            </select>
+
+                            <select class="form-select form-select-sm" aria-label="Ke">
+                                <option selected disabled>Ke</option>
+                                <option>Jakarta</option>
+                                <option>Surabaya</option>
+                                <option>Batam</option>
+                                <option>Bali</option>
+                                <option>Yogyakarta</option>
+                            </select>
+
+                            <input type="date" class="form-control form-control-sm" placeholder="Tanggal Keberangkatan"
+                                id="departure-date">
+                            <input type="date" class="form-control form-control-sm" placeholder="Tanggal Kembali"
+                                id="return-date" style="display: none;">
+
+                            <select class="form-select form-select-sm" aria-label="Jumlah Orang">
+                                <option selected>1 Orang</option>
+                                <option>2 Orang</option>
+                                <option>3 Orang</option>
+                                <option>4 Orang</option>
+                                <option>5 Orang</option>
+                            </select>
+
+                            <button type="button" class="btn btn-danger">CARI</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal end -->
+
+    <!-- tujuan -->
+    <!-- Heading -->
+    <h2 style=" margin-top: 3rem; margin-left: 1rem; margin-bottom: -30px;">Tujuan Lion Air</h2>
+    <!-- Isi Container -->
+    <div class="container-fluid custom-container my-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Ambon</p>
+                    <p class="box-description">Ambon, salah satu Kepulauan Rempah-Rempah di Indonesia yang menarik
+                        petualang Eropa dan koloni pada awal 1521. Ambon merupakan ibu kota Maluku, sebuah provinsi,
+                        terdiri dari sekitar 1.000 pulau yang sebelumnya dikenal sebagai Maluku, atau Kepulauan
+                        Rempah. Ambon mencakup 294 mil persegi berbukit umum, medan pertanian yang menghasilkan
+                        kopi, jagung, kopra, cengkeh dan gula, dan lainnya.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Banda Aceh</p>
+                    <p class="box-description">Banda Aceh kaya dengan peristiwa, atraksi dan budaya yang unik. Hal
+                        ini juga diberkati dengan keindahan alam, gelombang dan taman laut untuk menyelam. Banda
+                        Aceh terletak di ujung utara Sumatera. Banda Aceh memiliki sejarah yang menarik yang selama
+                        berabad-abad telah membentuk dan mengubah kawasan tersebut menjadi seperti sekarang ini.
+                        Pada tahun 1292, Marco Polo, dalam perjalanan epik dari Cina mengunjungi Sumatera dalam
+                        perjalanan ke Persia dan melaporkan bahwa di bagian utara pulau itu ada sebanyak enam port
+                        perdagangan sibuk termasuk Perlak, Samudera dan Lamri. tulisan Islam dan prasasti India dari
+                        sekitar abad kesembilan juga bernama daerah dan pentingnya, terutama sebagai sibuk dan
+                        sangat strategis pos perdagangan.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Balikpapan</p>
+                    <p class="box-description">Pusat dari bagian yang terabaikan akan Borneo, Balikpapan adalah kota
+                        yang menjadi gerbang Kalimantan. Kebanyakan usaha di sini untuk alasan berbisnis, khususnya
+                        industri pertambangan. Namun kota ini masih tetap memiliki nuansa sudut yang belum ditemukan
+                        di Asia, percampuran Bugis, Jawa, Dayak dan orang asing menjadi melting pot etnis. Dibatasi
+                        oleh hutan dan laut, Balikpapan mempertahankan pesona dunia lain bahkan sebagai kota
+                        modernisasi.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Batam</p>
+                    <p class="box-description">Batam merupakan salah satu dari 3.000 pulau, yang membentuk Kepulauan
+                        Riau dan paling dekat dengan Singapura, yang hanya berjarak 20 km. Salah satu daya tarik
+                        terbesar Batam adalah makanan laut segar dan lezat. Udang galah, kepiting hidup, dan ikan
+                        yang diambil langsung dari jaring di laut, lobster, kerang dan kerang yang dimasak dalam
+                        berbagai macam masakan. Mencoba 'gong-gong' kulit kerang lokal dimana Anda dapat mencicipi
+                        kelezatan daging kerang yang dicelupkan ke dalam saus pedas sebelum makan.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Banjarmasin</p>
+                    <p class="box-description">Banjarmasin atau yang dikenal sebagai 'River City' karena terletak di
+                        sebuah pulau delta dekat persimpangan Barito dan sungai Martapura. Banjarmasin juga
+                        merupakan ibukota Kalimantan Selatan. Kota ini telah lama terkenal sebagai pusat perdagangan
+                        permata, khususnya berlian langka dan batu rubi. Berlian yang diproduksi di Banjarmasin
+                        secara khusus dikenal karena kepandaian serta keindahan mereka.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Jakarta</p>
+                    <p class="box-description">Jakarta adalah ibu kota Republik Indonesia, sebuah negara lebih dari
+                        13.000 pulau dengan populasi lebih dari 180 juta. Sebagai ibu kota, Jakarta merupakan
+                        melting pot dari kelompok etnis yang berbeda. Jakarta adalah kota kontras; tradisional dan
+                        modern, sakral dan duniawi, sering berdiri berdampingan di kota metropolis yang padat.
+                        Bahkan penduduknya terdiri dari kelompok-kelompok etnis dan budaya, yang merupakan cerminan
+                        dari motto nasional; Bersatu dalam perbedaan.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Kuala Lumpur</p>
+                    <p class="box-description">Kuala Lumpur memancarkan pesona menarik dan memikat, yang tidak
+                        diragukan lagi akan menarik minat Anda. Kota yang dikenal sebagai KL, memiliki budaya
+                        campuran yang menakjubkan. Di sini, Anda akan berkeliling melewati komunitas Cina, Melayu,
+                        India Selatan, dan kelompok etnis Malaysia Timur, Thailand, Indonesia, Sikh dan komunitas
+                        besar ekspatriat. Sementara masing-masing komunitas memiliki festival, makanan, musik, seni
+                        dan fashion sendiri, Anda juga dapat merasakan budaya dari masing-masing daerah.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Jambi</p>
+                    <p class="box-description">Jambi adalah ibukota provinsi Jambi, di pulau Sumatera. Kota ini
+                        merupakan pelabuhan yang sibuk di Sungai Batang Hari. Ini juga merupakan pusat sawit dan
+                        karet memproduksi. Kota ini terletak 26 km dari reruntuhan Muaro Jambi, sebuah kota penting
+                        dari Kerajaan Sriwijaya kuno.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Pontianak</p>
+                    <p class="box-description">Pontianak merupakan ibukota provinsi Kalimantan Barat. Kota ini
+                        adalah kota industri menengah yang terletak di pulau Kalimantan. Pontianak terkenal dengan
+                        makanan dan produk regional. Industri utamanya adalah pembuatan kapal dan produksi karet,
+                        kelapa sawit, gula, lada, beras dan tembakau. Pontianak juga merupakan pusat perdagangan
+                        antara negara-negara lain dan kota-kota lain di Kalimantan Barat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tujuan end -->
+    <!-- footer -->
+    <section id="copy-right">
+        <div class="copy-right-sec"><i class="fa-solid fa-copyright"></i>
+            <p>&copy; Copyright by Lion Air. All Rights Reserved. This website is owned and operated by Nabila
+                Andriani<a href="#"> Lion Air</a></p>
+        </div>
+    </section>
+    <!-- footer end -->
+    <!-- bootstrap -->
+    <script src="penerbangan.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

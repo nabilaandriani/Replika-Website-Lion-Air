@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="promosi.css">
+    <title>Promosi</title>
+</head>
+
+<body>
+    <!-- tampilan navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="beranda.html" style="font-weight: 800; margin-left: 20px;">Lion
+                    Air</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Lion Air</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="beranda.html">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" aria-current="page" href="pemesanan.html">Pemesanan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="promosi.html">Promosi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="penerbangan.html">Penerbangan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="hubungi.html">Hubungi Kami</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Tampilan Navbar End -->
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs mt-5">
+        <li class="nav-item">
+            <a class="nav-link active" onclick="window.location.href='promosi.html'">Promosi Perjalanan</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" onclick="window.location.href='penerbangan.html'">Tujuan</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#">Rute Penerbangan</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#">eNewsletter</a>
+        </li>
+    </ul>
+    <!-- nav tabs end -->
+
+    <!-- isi content -->
+    <!-- promosi -->
+    <h2 style="margin-left: 70px; margin-top: auto; padding-top: 20px; ">Promosi</h2>
+    <p style="margin-left: 70px; margin-top: -5px;">View out top destination offers</p>
+    <div class="container">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-lg-6 col-md-12">
+                <div class="card mb-3" id="card">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="medan.png" class="img-fluid rounded-start" alt="gambar"
+                                style="margin-left: 30px;">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Medan</h5>
+                                <p class="card-text">Medan ialah kota ketiga terbesar di Indonesia yang terletak di luar
+                                    pulau jawa.</p>
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">Book
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" id="card">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="manado.png" class="img-fluid rounded-start" alt="gambar"
+                                style="margin-left: 30px;">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Manado</h5>
+                                <p class="card-text">Manado ialah ibukota Sulawesi Utara.
+                                </p>
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">Book
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" id="card">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="hochiminhcity.png" class="img-fluid rounded-start" alt="gambar"
+                                style="margin-left: 30px;">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Ho Chi Minh City</h5>
+                                <p class="card-text">Berlokasi di tengah Delta Mekong, Ho Chi Minh City sebelumnya
+                                    dikenal dengan nama Saigon.</p>
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">Book
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-lg-6 col-md-12">
+                <div class="card mb-3" id="card">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="kualalumpur.png" class="img-fluid rounded-start" alt="gambar"
+                                style="margin-left: 30px;">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Kuala Lumpur</h5>
+                                <p class="card-text">Kuala Lumpur dikenal sebagai kota dengan perpaduan tradisi dan
+                                    kebudayaan yang kaya.</p>
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">Book
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" id="card">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="jogjakarta.png" class="img-fluid rounded-start" alt="gambar"
+                                style="margin-left: 30px;">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Jogjakarta</h5>
+                                <p class="card-text">Jogjakarta ialah kota yang dikenal dengan warisan budaya dan
+                                    sejarahnya.</p>
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">Book
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" id="card">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="bali.png" class="img-fluid rounded-start" alt="gambar"
+                                style="margin-left: 30px;">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Bali</h5>
+                                <p class="card-text">Dengan kekayaan alamnya, Bali dikenal dengan pantai dan lautnya
+                                    yang indah.</p>
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">Book
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- promosi end -->
+     <!-- Heading -->
+    <h4 style=" margin-top: 3rem; margin-left: 1.6rem; margin-bottom: -30px;">View Other Offers</h4>
+    <!-- Isi Container -->
+    <div class="container-fluid custom-container my-5" id="container-fluid">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Ambon</p>
+                    <button type="button" class="btn" id="btn" data-bs-toggle="modal" data-bs-target="#myModal">Book
+                        Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Banda Aceh</p>
+                    <button type="button" class="btn" id="btn" data-bs-toggle="modal" data-bs-target="#myModal">Book
+                        Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Balikpapan</p>
+                    <button type="button" class="btn" id="btn" data-bs-toggle="modal" data-bs-target="#myModal">Book
+                        Now</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Batam</p>
+                    <button type="button" class="btn" id="btn" data-bs-toggle="modal" data-bs-target="#myModal">Book
+                        Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Banjarmasin</p>
+                    <button type="button" class="btn" id="btn" data-bs-toggle="modal" data-bs-target="#myModal">Book
+                        Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Jakarta</p>
+                    <button type="button" class="btn" id="btn" data-bs-toggle="modal" data-bs-target="#myModal">Book
+                        Now</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Kuala Lumpur</p>
+                    <button type="button" class="btn" id="btn" data-bs-toggle="modal" data-bs-target="#myModal">Book
+                        Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Jambi</p>
+                    <button type="button" class="btn" id="btn" data-bs-toggle="modal" data-bs-target="#myModal">Book
+                        Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-2">
+                    <p class="box-title">Pontianak</p>
+                    <button type="button" class="btn" id="btn" data-bs-toggle="modal" data-bs-target="#myModal">Book
+                        Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tujuan end -->
+    <!-- view other -->
+
+    <!-- view other end -->
+
+    <!-- modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Pemesanan</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="booking-section">
+                        <div class="trip-type">
+                            <input type="radio" class="form-check-input" id="sekali-jalan" name="tripType"
+                                value="sekali" checked>
+                            <label class="form-check-label" for="sekali-jalan">Sekali Jalan</label>
+
+                            <input type="radio" class="form-check-input" id="pulang-pergi" name="tripType"
+                                value="pulang">
+                            <label class="form-check-label" for="pulang-pergi">Pulang Pergi</label>
+                        </div>
+
+                        <div class="form-row">
+                            <select class="form-select form-select-sm" aria-label="Dari">
+                                <option selected disabled>Dari</option>
+                                <option>Jakarta</option>
+                                <option>Surabaya</option>
+                                <option>Batam</option>
+                                <option>Bali</option>
+                                <option>Yogyakarta</option>
+                            </select>
+
+                            <select class="form-select form-select-sm" aria-label="Ke">
+                                <option selected disabled>Ke</option>
+                                <option>Jakarta</option>
+                                <option>Surabaya</option>
+                                <option>Batam</option>
+                                <option>Bali</option>
+                                <option>Yogyakarta</option>
+                            </select>
+
+                            <input type="date" class="form-control form-control-sm" placeholder="Tanggal Keberangkatan"
+                                id="departure-date">
+                            <input type="date" class="form-control form-control-sm" placeholder="Tanggal Kembali"
+                                id="return-date" style="display: none;">
+
+                            <select class="form-select form-select-sm" aria-label="Jumlah Orang">
+                                <option selected>1 Orang</option>
+                                <option>2 Orang</option>
+                                <option>3 Orang</option>
+                                <option>4 Orang</option>
+                                <option>5 Orang</option>
+                            </select>
+
+                            <button type="button" class="btn btn-danger">CARI</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal end -->
+
+    <!-- tujuan -->
+    <!-- Heading -->
+
+    <!-- footer -->
+    <section id="copy-right">
+        <div class="copy-right-sec"><i class="fa-solid fa-copyright"></i>
+            <p>&copy; Copyright by Lion Air. All Rights Reserved. This website is owned and operated by Nabila
+                Andriani<a href="#"> Lion Air</a></p>
+        </div>
+    </section>
+    <!-- footer end -->
+    <!-- bootstrap -->
+    <script src="penerbangan.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
